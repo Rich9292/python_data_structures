@@ -22,6 +22,7 @@ The second UML design is simple, abstract, and clear. All the classes and operat
 The design is very detailed, and it attempts to outline every interaction mentioned in the requirements. One improvement is that the design contains a “User” class that is not necessary since the assumption is that there will be a single user. Additionally, the design is very complex, and the number of interactions and classes can be confusing. There are also several classes that can be converted into methods within other classes here. 
 
 **Design 4**
+
 <img src = images/design4.png>
 
 This UML is a simple representation with four classes. The attributes are abstracted, and only relevant interfaces are accessed through public methods. The multiplicity clearly shows the relationship of multiple job objects for 1 job manager class. Some improvements can be made to further simplify the design. The job\_list class is redundant and should be moved into a list/array attribute of the manager class as was done in Design 2. Additionally, the startup class (entry point) being a separate class is not necessary. It can be moved withing the job\_manager class as a member function. 
