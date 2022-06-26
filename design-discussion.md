@@ -6,30 +6,29 @@
 
 
 **Design 1**
-<img src = images/design1.png>
-
+![This is an image](images/design1.png)
 Our first design is highly modular, which provides a good basis for extensibility. However, the complexity is much higher than what is needed for this application. Also, the design is too tightly coupled to UI elements. There are several classes that can be converted into methods of another class, such EditCurrentJob, etc.
 
 
 **Design 2**
-<img src = images/design2.png>
+![This is an image](images/design2.png)
 
 The second UML design is simple, abstract, and clear. All the classes and operations have reasonable and workable logic. This design meets all the requirements for the assignment, and it is a viable design for the application. One improvement is that the multiplicities between the Application, ComparisonSettings, and JobDetails classes need to be switched. 
 
 **Design 3**
-<img src = images/design3.png>
+![This is an image](images/design3.png)
 
 The design is very detailed, and it attempts to outline every interaction mentioned in the requirements. One improvement is that the design contains a “User” class that is not necessary since the assumption is that there will be a single user. Additionally, the design is very complex, and the number of interactions and classes can be confusing. There are also several classes that can be converted into methods within other classes here. 
 
 **Design 4**
 
-<img src = images/design4.png>
+![This is an image](images/design4.png)
 
 This UML is a simple representation with four classes. The attributes are abstracted, and only relevant interfaces are accessed through public methods. The multiplicity clearly shows the relationship of multiple job objects for 1 job manager class. Some improvements can be made to further simplify the design. The job\_list class is redundant and should be moved into a list/array attribute of the manager class as was done in Design 2. Additionally, the startup class (entry point) being a separate class is not necessary. It can be moved withing the job\_manager class as a member function. 
 
 
 **Team Design**
-<img src = images/team_design.png>
+![This is an image](images/team_design.png)
 
 We coalesced quickly around Design 2 and 4 and spent much of our time discussing the key differences between these two. We decided that, given the size of the project, simplicity in design is something that we want to prioritize. Design 2 and 4 both provided simple and easy-to-understand designs which satisfy all the requirements of the specification. All group members had some variation of a Job class which tracked all the attributes of a job (title, company, location, etc.). One interesting point of the discussion was that we all had different views on what an entrypoint to the system should look like. Weimei brought up a great point that some of us had defined entire classes for requirements which could be satisfied with just an operation/method.
 
