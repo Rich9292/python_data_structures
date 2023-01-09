@@ -1,9 +1,10 @@
-import os, sys
-parent = os.path.abspath('..')
-sys.path.insert(1, parent)
-import src.node as nd
-# above is used to import parent dir for some reason
+# import os, sys
+# parent = os.path.abspath('..')
+# sys.path.insert(1, parent)
+# import src.node as nd
+# uncomment above if you want to run this file by itself (need to run from curr dir)
 
+from ..src import node as nd
 
 def test_answer():
 
