@@ -18,7 +18,7 @@ class single_linked_list:
             print("list is empty")
         else:
             curr = self.head
-            print(curr.get_value())
-            while curr.get_next() != None:
-                curr = curr.get_next()
+            while curr != None:
                 print(curr.get_value())
+                curr = curr.get_next()
+                
