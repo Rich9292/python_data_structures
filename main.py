@@ -1,12 +1,16 @@
 # # can use this file to run data structures without installing package
 
 
-# create some nodes
+# create a node
 import data_struct.src.node as nd
-some_node = nd.node(1,2)
-print(some_node.get_value())
-print(some_node.get_next())
+my_node =  nd.node("data for my node")
 
-# create a single linked list
-import data_struct.src.single_linked_list as sll
-some_sll = sll.single_linked_list()
+# create a single linked list and add some nodes
+import data_struct.src.linked_list as ll
+my_sll = ll.single_linked_list()
+my_sll.add('node1')
+my_sll.add('node2')
+my_sll.add('node3')
+my_sll.print()
+
+test = 0
