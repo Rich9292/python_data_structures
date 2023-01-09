@@ -21,4 +21,12 @@ class single_linked_list:
             while curr != None:
                 print(curr.get_value())
                 curr = curr.get_next()
+
+    def size(self):
+        curr = self.head
+        count = 0
+        while curr != None:
+            count += 1
+            curr = curr.get_next()
+        return count
                 
