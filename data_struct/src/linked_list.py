@@ -29,4 +29,50 @@ class single_linked_list:
             count += 1
             curr = curr.get_next()
         return count
+
+    def search(self,value):
+        curr = self.head
+        while curr != None:
+            if curr.get_value() == value:
+                return True
+            curr = curr.get_next()
+        return False
+
+    def remove(self,value):
+        curr = self.head
+        prev = None
+        while curr != None:
+            if curr.get_value() == value:
+                break
+            prev = curr
+            curr = curr.get_next()
+        if curr == None:
+            print("value not in list")
+        elif prev == None:
+            self.head = curr.get_next()
+        else:
+            prev.set_next(curr.get_next())
+
+    def append(self):
+        # TODO
+        return 0
+    
+    def insert(self):
+        # TODO
+        return 0
+
+    def index(self):
+        # TODO
+        return 0
+
+    def pop(self):
+        # TODO
+        return 0
+    """
+    The remaining methods append, insert, index, and pop are left as exercises.
+    Remember that each of these must take into account whether the change is taking
+    place at the head of the list or someplace else. Also, insert, index, and pop require
+    that we name the positions of the list. We will assume that position names are integers
+    starting with 0.
+    """
                 
