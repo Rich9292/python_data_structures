@@ -1,4 +1,9 @@
-from ..src import node as nd
+import os, sys
+parent = os.path.abspath('..')
+sys.path.insert(1, parent)
+import src.node as nd
+# above is used to import parent dir for some reason
+
 
 def test_answer():
 
