@@ -21,4 +21,8 @@ print(my_sll.search('node1'))
 my_sll.remove('node3')
 my_sll.print()
 
+# append node
+my_sll.append('node3')
+my_sll.print()
+
 test = 0
