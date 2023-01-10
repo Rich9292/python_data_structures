@@ -18,13 +18,11 @@ my_dll = ll.double_linked_list()
 my_dll.insert_after(0,'node1')
 my_dll.insert_after(0,'node2')
 my_dll.insert_after(1,'node3')
-
 my_dll.insert_after(1,'node2.5')
 my_dll.insert_after(3,'node4')
 my_dll.insert_after(0,'node0')
-
 my_dll.prepend('prepended node')
-
 my_dll.append('appended node')
 
 my_dll.print()
+print(my_dll.size())

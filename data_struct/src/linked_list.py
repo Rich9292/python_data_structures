@@ -79,7 +79,7 @@ class double_linked_list:
         if (self.head == None):
             self.prepend(value)
             return
-        
+
         temp = nd.double_node(value)
         curr = self.head
         count = 0
@@ -132,12 +132,15 @@ class double_linked_list:
                 curr = curr.get_next()
 
     def size(self):
-        # TODO
-        pass
+        if self.is_empty():
+            return 0
+        else:
+            curr = self.head
+            count = 0
+            while curr != None:
+                count += 1
+                curr = curr.get_next()
+            return count
 
     def is_empty(self):
         return self.head == None
-
-    def search(self,value):
-        # TODO
-        pass
