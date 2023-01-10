@@ -1,4 +1,4 @@
-# # can use this file to run data structures without installing package
+# can use this file to run data structures without installing package
 
 
 # create a node
@@ -14,15 +14,3 @@ my_sll.add('node3')
 
 # print the list, check size, search for node
 my_sll.print()
-print(my_sll.size())
-print(my_sll.search('node1'))
-
-# remove node
-my_sll.remove('node3')
-my_sll.print()
-
-# append node
-my_sll.append('node3')
-my_sll.print()
-
-test = 0

@@ -6,7 +6,7 @@ class single_linked_list:
         self.head = head
 
     def is_empty(self):
-        return self.head == None
+        return self.head == None    
 
     def add(self,node_value):
         temp = nd.node(node_value)
@@ -65,3 +65,8 @@ class single_linked_list:
         else:
             prev.set_next(temp)
                 
+class double_linked_list:
+
+    def __init__(self):
+        # TODO
+        pass
