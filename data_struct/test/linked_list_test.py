@@ -10,9 +10,9 @@ def test_answer():
 
     # test adding nodes to beginning works
     my_sll = ll.single_linked_list()
-    my_sll.add('node1')
-    my_sll.add('node2')
-    my_sll.add('node3')
+    my_sll.prepend('node1')
+    my_sll.prepend('node2')
+    my_sll.prepend('node3')
     temp = my_sll.head
     assert temp.get_value() == "node3"
     temp = temp.get_next()
